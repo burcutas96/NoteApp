@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note App</title>
+</head>
+<body>
+    <!--Bir öğrencinin bilgilerini alıp notunu hesaplayan
+        not uygulaması
+
+        - Ad giriniz (name)
+        - Numara giriniz (studentNo)
+        - Cinsiyet giriniz (gender)
+        - Ders adı giriniz (lessonName)
+        - 1. yazılı notu (note1)
+        - 2. yazılı notu (note2)
+        - ortalama hesapla ve consol'a yazdır.
+    -->
+
+    <script>
+        //Manuel olarak girdiğimiz bilgiler
+        var name = "Burcu";
+        var studentNo = "273";
+        var gender = false;  //erkek: true  kadın: false
+        var lessonName = "Matematik";
+        var note1 = 50;
+        var note2 = 30;
+        var avg = (note1 + note2) / 2;
+
+        console.log(studentNo + " numaralı " + name + "(" + gender + ")" + " adlı öğrencinin " + 
+        lessonName + " dersinden ortalaması: " + avg);
+
+
+
+        //Kullanıcıdan aldığımız bilgiler
+        var name = prompt("İsim giriniz: ");
+        var studentNo = prompt("Öğrenci no giriniz: ");
+        var gender = prompt("Cinsiyet: ");  //erkek: true  kadın: false
+        var lessonName = prompt("Ders adı: ");
+        var note1 = prompt("1. Not: ");
+        var note2 = prompt("2. Not: ");
+        var avg = (Number(note1) + Number(note2)) / 2;
+
+        console.log(studentNo + " numaralı " + name + "(" + gender + ")" + " adlı öğrencinin " + 
+        lessonName + " dersinden ortalaması: " + avg);
+    </script>
+
+</body>
+</html>
